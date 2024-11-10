@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding:0;
+}
+
+body {
+  min-height: 100vh;
+  background: #FAF6E3;
+  font-family: "Sour Gummy", sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "editor viewer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 85vh;
+  grid-gap: 1em;
+  overflow: hidden;
+  margin: 1em 2em;
+}
+
+main {
+  border-radius: 7px;
+  grid-area: editor;
+}
+
+aside {
+  border-radius: 7px;
+  grid-area: viewer;
+  background: #313233;
+  color: white;
+}
+
+header {
+  text-align: center;
+  color: brown;
+  font-size: 2rem;
+  grid-area: header;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.4em;
+  resize: none;
+}
