@@ -35,8 +35,9 @@ main {
 aside {
   border-radius: 7px;
   grid-area: viewer;
-  background: #313233;
-  color: white;
+  background: #e9f0ea;
+  padding: 0.4em;
+  font-size: 1.3rem;
 }
 
 header {
